@@ -6,6 +6,8 @@ Calcolo del prezzo del biglietto del treno.
 
 inserire all'interno delle variabili parsInt per assicurare un valore numerico.
 
+2. Creare una variabile con il prezzo al chilometro;
+
 
 */
 
@@ -13,9 +15,20 @@ inserire all'interno delle variabili parsInt per assicurare un valore numerico.
 
 // 1.
 
-const kmTravel = parseInt(prompt('Quanti chilometri desideri percorrere?'));
+const kmTravel = 10 //parseInt(prompt('Quanti chilometri desideri percorrere?'));
 
-const age = parseInt(prompt('Quanti anni hai?'));
+const age = 20 //parseInt(prompt('Quanti anni hai?'));
+
+
+
+// 2.
+const price = 0.21;
+
+let ticket = kmTravel * price;
+
+
+
 
 console.log(kmTravel);
 console.log(age);
+console.log(ticket);
