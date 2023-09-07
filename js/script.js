@@ -25,6 +25,8 @@ const kmTravel = 10 //parseInt(prompt('Quanti chilometri desideri percorrere?'))
 
 const age = 20 //parseInt(prompt('Quanti anni hai?'));
 
+let message;
+
 
 
 // 2.
@@ -39,8 +41,7 @@ let ticket = kmTravel * price;
 
 let ticketUnderAge = ticket - (ticket * discountUnderAge);
 
-let tickeOverAge = ticket - (ticket * discountOverAge);
-
+let ticketOverAge = ticket - (ticket * discountOverAge);
 
 
 
@@ -48,6 +49,13 @@ let tickeOverAge = ticket - (ticket * discountOverAge);
 // 3.
 
 
+if (age <= 17) {
+message = `Il prezzo del biglietto è pari a ${ticketUnderAge}`;
+}else if (age >=65) {
+    message = `Il prezzo del biglietto è pari a ${ticketOverAge}`;
+}else{
+    message = `Il prezzo del biglietto è pari a ${ticket}`;
+}
 
 
 
