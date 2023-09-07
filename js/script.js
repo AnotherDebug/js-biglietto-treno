@@ -35,9 +35,13 @@ const discountOverAge = 0.4;
 
 let ticket = kmTravel * price;
 
-let ticketUnderAge = ticket - ticket * discountUnderAge;
+let ticketDiscountUnder = ticket - ticket * discountUnderAge;
 
-let ticketOverAge = ticket - ticket * discountOverAge;
+let ticketDiscountOver = ticket - ticket * discountOverAge;
+
+let ticketUnderAge = ticketDiscountUnder.toFixed(2);
+
+let ticketOverAge = ticketDiscountOver.toFixed(2);
 
 // 3.
 
@@ -49,11 +53,6 @@ if (age <= 17) {
   message = `Il prezzo del biglietto è pari a € ${ticket}.`;
 }
 
-console.log(kmTravel);
-console.log(age);
-console.log(ticket);
-console.log(ticketUnderAge);
-console.log(ticketOverAge);
 
 
 document.getElementById('output').innerHTML = message;
