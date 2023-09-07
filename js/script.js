@@ -19,9 +19,9 @@ Creare due variabili con il valore dello sconto, uno per i minorenni, uno per gl
 
 // 1.
 
-const kmTravel = 10; //parseInt(prompt('Quanti chilometri desideri percorrere?'));
+const kmTravel = parseInt(prompt('Quanti chilometri desideri percorrere?'));
 
-const age = 65; //parseInt(prompt('Quanti anni hai?'));
+const age = parseInt(prompt('Quanti anni hai?'));
 
 let message;
 
